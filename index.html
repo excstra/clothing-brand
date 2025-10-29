@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Tailoring — Nigerian Men's Wear</title>
+    <link rel="stylesheet" href="clothing-responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1>Excel Tailoring</h1>
+          <p class="tag">Refined Nigerian Men's Wear</p>
+        </div>
+        <button class="hamburger" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="#catalogue">Catalogue</a></li>
+            <li><a href="#other-wears">Other Wears</a></li>
+            <li><a href="#feedback">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-inner container">
+          <div class="hero-text">
+            <h2>Elegant Senator Styles & Contemporary Nigerian Menswear</h2>
+            <p>Handcrafted fits, premium fabrics, and tailoring that stands out. Browse our catalogue and contact us for bespoke orders.</p>
+            <div class="hero-ctas">
+              <a class="btn" href="#catalogue">See Senator Styles</a>
+              <a class="btn btn-outline" href="#other-wears">Explore Other Wears</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1602810318383-e439b9c3f3e3?w=1200&q=80&auto=format&fit=crop" alt="Tailored Nigerian Senator wear" />
+          </div>
+        </div>
+      </section>
+
+      <section id="catalogue" class="catalogue container">
+        <header class="section-header">
+          <h3>Senator Styles</h3>
+          <p class="lead">Classic and modern senator designs crafted with attention to detail.</p>
+        </header>
+
+        <div class="gallery">
+          <a class="card" href="#" aria-label="Classic Navy Senator — View">
+            <img src="https://picsum.photos/600/800?random=1" alt="Classic Navy Senator" />
+            <div class="info">
+              <h4>Classic Navy Senator</h4>
+              <p class="price">₦25,000</p>
+            </div>
+          </a>
+
+          <a class="card" href="#" aria-label="Royal Black Senator — View">
+            <img src="https://picsum.photos/600/800?random=2" alt="Royal Black Senator" />
+            <div class="info">
+              <h4>Royal Black Senator</h4>
+              <p class="price">₦28,000</p>
+            </div>
+          </a>
+
+          <a class="card" href="#" aria-label="Cream Gold Senator — View">
+            <img src="https://picsum.photos/600/800?random=3" alt="Cream Gold Senator" />
+            <div class="info">
+              <h4>Cream Gold Senator</h4>
+              <p class="price">₦30,000</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="other-wears" class="catalogue container">
+        <header class="section-header">
+          <h3>Other Nigerian Male Wears</h3>
+          <p class="lead">Agbada, Kaftan, Danshiki and more — curated collection.</p>
+        </header>
+
+        <div class="gallery">
+          <a class="card" href="#" aria-label="Agbada — View">
+            <img src="https://picsum.photos/600/800?random=4" alt="Agbada" />
+            <div class="info">
+              <h4>Agbada</h4>
+              <p class="price">₦45,000</p>
+            </div>
+          </a>
+
+          <a class="card" href="#" aria-label="Kaftan — View">
+            <img src="https://picsum.photos/600/800?random=5" alt="Kaftan" />
+            <div class="info">
+              <h4>Kaftan</h4>
+              <p class="price">₦18,000</p>
+            </div>
+          </a>
+
+          <a class="card" href="#" aria-label="Danshiki — View">
+            <img src="https://picsum.photos/600/800?random=6" alt="Danshiki" />
+            <div class="info">
+              <h4>Danshiki</h4>
+              <p class="price">₦15,000</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="feedback" class="feedback container">
+        <header class="section-header">
+          <h3>Send Us Your Feedback or Order Details</h3>
+        </header>
+        <form class="contact-form" action="#" method="post" onsubmit="alert('Thank you — form submission simulated.'); return false;">
+          <div class="form-grid">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <textarea name="message" rows="5" placeholder="Your message or order details" required></textarea>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send Message</button>
+            <a class="btn btn-outline" href="https://wa.me/2348012345678" target="_blank">Chat on WhatsApp</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div class="whatsapp">
+      <a href="https://wa.me/2348012345678" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 Excel Tailoring. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile Navigation Toggle
+      const hamburger = document.querySelector('.hamburger');
+      const mainNav = document.querySelector('.main-nav');
+      
+      hamburger.addEventListener('click', () => {
+        const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !isExpanded);
+        mainNav.classList.toggle('active');
+        document.body.classList.toggle('nav-open');
+      });
+
+      // Close mobile menu when clicking on links
+      document.querySelectorAll('.main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.setAttribute('aria-expanded', 'false');
+          mainNav.classList.remove('active');
+          document.body.classList.remove('nav-open');
+        });
+      });
+    </script>
+  </body>
+</html>
